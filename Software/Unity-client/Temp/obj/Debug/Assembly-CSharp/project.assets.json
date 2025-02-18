@@ -1,11 +1,84 @@
 {
   "version": 3,
   "targets": {
-    ".NETStandard,Version=v2.1": {}
+    ".NETStandard,Version=v2.1": {
+      "DA_Assets.FCU/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "DA_Assets.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DA_Assets.FCU.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DA_Assets.FCU.dll": {}
+        }
+      },
+      "DA_Assets.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/DA_Assets.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DA_Assets.Shared.dll": {}
+        }
+      },
+      "DA_Assets.Shared.Editor/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "DA_Assets.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/DA_Assets.Shared.Editor.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DA_Assets.Shared.Editor.dll": {}
+        }
+      },
+      "DA_Assets.SVGMeshUnity/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/DA_Assets.SVGMeshUnity.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DA_Assets.SVGMeshUnity.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DA_Assets.FCU/1.0.0": {
+      "type": "project",
+      "path": "DA_Assets.FCU.csproj",
+      "msbuildProject": "DA_Assets.FCU.csproj"
+    },
+    "DA_Assets.Shared/1.0.0": {
+      "type": "project",
+      "path": "DA_Assets.Shared.csproj",
+      "msbuildProject": "DA_Assets.Shared.csproj"
+    },
+    "DA_Assets.Shared.Editor/1.0.0": {
+      "type": "project",
+      "path": "DA_Assets.Shared.Editor.csproj",
+      "msbuildProject": "DA_Assets.Shared.Editor.csproj"
+    },
+    "DA_Assets.SVGMeshUnity/1.0.0": {
+      "type": "project",
+      "path": "DA_Assets.SVGMeshUnity.csproj",
+      "msbuildProject": "DA_Assets.SVGMeshUnity.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    ".NETStandard,Version=v2.1": []
+    ".NETStandard,Version=v2.1": [
+      "DA_Assets.FCU >= 1.0.0",
+      "DA_Assets.SVGMeshUnity >= 1.0.0",
+      "DA_Assets.Shared >= 1.0.0",
+      "DA_Assets.Shared.Editor >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\majiale\\.nuget\\packages\\": {}
@@ -31,7 +104,20 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.FCU.csproj": {
+              "projectPath": "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.FCU.csproj"
+            },
+            "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.Shared.csproj": {
+              "projectPath": "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.Shared.csproj"
+            },
+            "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.Shared.Editor.csproj": {
+              "projectPath": "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.Shared.Editor.csproj"
+            },
+            "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.SVGMeshUnity.csproj": {
+              "projectPath": "D:\\Repos\\HCI1\\Software\\Unity-client\\DA_Assets.SVGMeshUnity.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

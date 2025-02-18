@@ -1,0 +1,8 @@
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/CMakeFiles/edit_cache.dir
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/CMakeFiles/rebuild_cache.dir
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/GameActivity/CMakeFiles/game.dir
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/GameActivity/CMakeFiles/edit_cache.dir
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/GameActivity/CMakeFiles/rebuild_cache.dir
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/FramePacing/CMakeFiles/swappywrapper.dir
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/FramePacing/CMakeFiles/edit_cache.dir
+D:/Documents/Unity/Project/magnifier/.utmp/RelWithDebInfo/2t721h1b/arm64-v8a/FramePacing/CMakeFiles/rebuild_cache.dir

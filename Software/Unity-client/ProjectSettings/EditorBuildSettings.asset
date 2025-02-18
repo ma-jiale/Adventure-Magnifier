@@ -5,9 +5,42 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/Begin.unity
+    guid: e5c88508b0af4604c8da2f8efe7460b5
+  - enabled: 1
+    path: Assets/Scenes/Home.unity
+    guid: 073f9f51c8a82fc42a4da02fddca35df
+  - enabled: 1
+    path: Assets/Scenes/Search.unity
+    guid: 9f87b549f57aa7f4ea56b1c3f2a68057
+  - enabled: 1
+    path: Assets/Scenes/Fail.unity
+    guid: 52409cc3c3706dd4bb55e538198333c7
+  - enabled: 1
+    path: Assets/Scenes/Round1.unity
+    guid: f83db5faba3375f4c97855d6b687b05d
+  - enabled: 1
+    path: Assets/Scenes/Round2.unity
+    guid: 3a10bc3b89f3f6748ab08b38dbd16256
+  - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: bcd09bdd1b7d4c04483faee98a21c68b
+  - enabled: 1
+    path: Assets/Scenes/Review.unity
+    guid: f6f938cc51d842940b3f60043e2e8383
+  - enabled: 1
+    path: Assets/Scenes/Fail2.unity
+    guid: 2372f0a17eeb0804f82622bb5412e253
+  - enabled: 1
+    path: Assets/Scenes/Home_2.unity
+    guid: 0a95c39f19349334aa6d3b2ca571b0cc
+  - enabled: 1
+    path: Assets/Scenes/VoiceSearch.unity
+    guid: 40a2cdd4a9152174c8bfbb4c0739cc6f
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0
