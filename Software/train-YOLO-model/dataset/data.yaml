@@ -1,0 +1,26 @@
+# data.yaml
+
+path: D:\Desktop\HCI\software\detect_flowers\my_dataset # 数据集的根目录
+train: D:\Desktop\HCI\software\detect_flowers\my_dataset\images\train  # 训练图像路径
+val: D:\Desktop\HCI\software\detect_flowers\my_dataset\images\val  # 验证图像路径
+
+
+# Classes
+names:
+  0: sunflower
+  1: tulip
+  2: rose
+  3: cat
+  4: sheep
+  5: butterfly
+  6: elephant
+  7: dog
+  8: daisy
+  9: dandelion
+
+
+
+
+
+
+
