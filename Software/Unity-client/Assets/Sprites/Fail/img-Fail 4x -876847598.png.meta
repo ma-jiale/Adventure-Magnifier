@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: 785ac88acf148d3438aa27110a066c9a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1251287921688599991
+    second: img-Fail 4x -876847598_0
+  - first:
+      213: 304888261402163553
+    second: img-Fail 4x -876847598_1
+  - first:
+      213: -2554600783990810956
+    second: img-Fail 4x -876847598_2
+  - first:
+      213: 1294443669322452408
+    second: img-Fail 4x -876847598_3
+  - first:
+      213: -6885216936732801880
+    second: img-Fail 4x -876847598_4
+  - first:
+      213: 7468728382268670693
+    second: img-Fail 4x -876847598_5
+  - first:
+      213: -5523292745294148307
+    second: img-Fail 4x -876847598_6
+  - first:
+      213: -8045921914977594965
+    second: img-Fail 4x -876847598_7
+  - first:
+      213: 8307360365343001148
+    second: img-Fail 4x -876847598_8
+  - first:
+      213: -6205422822492253766
+    second: img-Fail 4x -876847598_9
+  - first:
+      213: 6509999317732202930
+    second: img-Fail 4x -876847598_10
+  - first:
+      213: -9203160556874305192
+    second: img-Fail 4x -876847598_11
+  - first:
+      213: 7255376910453910505
+    second: img-Fail 4x -876847598_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 1
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_0
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 2779
+        width: 473
+        height: 650
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bd5cf33cb77d5110800000000000000
+      internalID: 1251287921688599991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_1
+      rect:
+        serializedVersion: 2
+        x: 1339
+        y: 2805
+        width: 265
+        height: 571
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 169ff05224e2b3400800000000000000
+      internalID: 304888261402163553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_2
+      rect:
+        serializedVersion: 2
+        x: 1588
+        y: 2806
+        width: 326
+        height: 601
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4b61b4f2f1c3c8cd0800000000000000
+      internalID: -2554600783990810956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_3
+      rect:
+        serializedVersion: 2
+        x: 2005
+        y: 2878
+        width: 136
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bdc7b3b8a9c6f110800000000000000
+      internalID: 1294443669322452408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_4
+      rect:
+        serializedVersion: 2
+        x: 2383
+        y: 2878
+        width: 136
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a4c98cecabc270a0800000000000000
+      internalID: -6885216936732801880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_5
+      rect:
+        serializedVersion: 2
+        x: 2761
+        y: 2878
+        width: 136
+        height: 142
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e2800584e046a760800000000000000
+      internalID: 7468728382268670693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_6
+      rect:
+        serializedVersion: 2
+        x: 273
+        y: 1458
+        width: 124
+        height: 1120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d2d004603825953b0800000000000000
+      internalID: -5523292745294148307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_7
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 1172
+        width: 124
+        height: 1353
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba1da3fb5a4275090800000000000000
+      internalID: -8045921914977594965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_8
+      rect:
+        serializedVersion: 2
+        x: 758
+        y: 1856
+        width: 115
+        height: 765
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3acd6dec3ca94370800000000000000
+      internalID: 8307360365343001148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_9
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 177
+        width: 1569
+        height: 2089
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ab15f3812d8e1e9a0800000000000000
+      internalID: -6205422822492253766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_10
+      rect:
+        serializedVersion: 2
+        x: 2273
+        y: 2064
+        width: 115
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b9967553e9285a50800000000000000
+      internalID: 6509999317732202930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_11
+      rect:
+        serializedVersion: 2
+        x: 2498
+        y: 1986
+        width: 115
+        height: 583
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 851fe94eb3ec74080800000000000000
+      internalID: -9203160556874305192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: img-Fail 4x -876847598_12
+      rect:
+        serializedVersion: 2
+        x: 2731
+        y: 1406
+        width: 125
+        height: 1119
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9eb2d230cd640b460800000000000000
+      internalID: 7255376910453910505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      img-Fail 4x -876847598_0: 1251287921688599991
+      img-Fail 4x -876847598_1: 304888261402163553
+      img-Fail 4x -876847598_10: 6509999317732202930
+      img-Fail 4x -876847598_11: -9203160556874305192
+      img-Fail 4x -876847598_12: 7255376910453910505
+      img-Fail 4x -876847598_2: -2554600783990810956
+      img-Fail 4x -876847598_3: 1294443669322452408
+      img-Fail 4x -876847598_4: -6885216936732801880
+      img-Fail 4x -876847598_5: 7468728382268670693
+      img-Fail 4x -876847598_6: -5523292745294148307
+      img-Fail 4x -876847598_7: -8045921914977594965
+      img-Fail 4x -876847598_8: 8307360365343001148
+      img-Fail 4x -876847598_9: -6205422822492253766
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fa3d210e5607b894fbe327c4c99cf124
+guid: 36a9df4b4ca6ef943bbfa8a63a7d1b40
 TextureImporter:
   internalIDToNameTable:
   - first:
@@ -116,10 +116,10 @@ TextureImporter:
       name: Sunflower_0
       rect:
         serializedVersion: 2
-        x: 72
+        x: 131
         y: 0
-        width: 201
-        height: 369
+        width: 265
+        height: 485
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -147,8 +147,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Sunflower_0: -256329436847572505
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

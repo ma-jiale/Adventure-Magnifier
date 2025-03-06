@@ -1,0 +1,10 @@
+https://api.figma.com/v1/images/yAvY4Nn1eyjcIdN9GiNdHO?ids=563:361,563:363,563:371&format=png&scale=4
+
+{
+    "err": null,
+    "images": {
+        "563:361": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/465b5b77-b039-4a02-9dfe-af5be5b28459",
+        "563:363": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/f126759c-a40b-49aa-bff3-afb8816c8b11",
+        "563:371": "https://figma-alpha-api.s3.us-west-2.amazonaws.com/images/aa991e3d-c8b9-45c9-a1c2-a503dcb01f34"
+    }
+}
