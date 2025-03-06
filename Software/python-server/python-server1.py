@@ -11,6 +11,7 @@ import numpy as np
 import cv2
 from pydub import AudioSegment
 from openai import OpenAI
+from config import Gemini_API_KEY, DeepSeek_API_KEY, Baidu_API_KEY, Baidu_APP_ID, Baidu_SECRET_KEY
 
 app = Flask(__name__)
 
@@ -18,16 +19,11 @@ app = Flask(__name__)
 model = YOLO("models/myModel.pt")
 
 # 配置gemini API
-genai.configure(api_key="AIzaSyAFpwjnWz8SbWA-1yPdl-iDqAI7rQVUnjc")
+genai.configure(Gemini_API_KEY)
 genai_model = genai.GenerativeModel("gemini-1.5-pro")
 
 # 使用DeepSeeek的API密钥和 API 的基础 URL创建一个OpenAI客户端实例
-client = OpenAI(api_key="sk-5e89b1cd55f74343b50752fe5fb1d41b", base_url="https://api.deepseek.com")
-
-# 配置baidu语音API
-APP_ID = '116958157'
-API_KEY = "vWqLVUQfe9BJtpN9go6YtxK4"
-SECRET_KEY = "XdkkgTqU967fcIsHnYKfw59xrSZbvVnm"
+client = OpenAI(DeepSeek_API_KEY, base_url="https://api.deepseek.com")
 
 client_id = str(uuid.uuid4())
 # HOST = '127.0.0.1'  # 监听所有可用的接口
@@ -111,7 +107,7 @@ def DeepSeek(text):
 def baidu_tts(text):
     """根据传入的文字内容，调用百度文字转语音模型，返回生成的语音二进制数据"""
     print("DEBUG:正在将文字结果转换为音频")
-    client = AipSpeech(APP_ID, API_KEY, SECRET_KEY)
+    client = AipSpeech(Baidu_API_KEY, Baidu_APP_ID, Baidu_SECRET_KEY)
     voice = client.synthesis(text, 'zh', 6, {'spd': 5,'pit':5, 'vol': 15, 'per': 4100, 'aue':6})
     return voice
 

@@ -13,6 +13,7 @@ from time import mktime
 import _thread as thread
 import requests
 from pydub import AudioSegment
+from config import XF_API_Key, XF_API_Secret, XF_APP_ID
 
 app = Flask(__name__)
 asr_result = '' # 储存识别结果
@@ -261,7 +262,6 @@ def send_request_to_model(sentence):
         return {"error": f"请求异常: {str(e)}"}
 
 if __name__ == '__main__':
-    wsParam = Ws_Param(APPID='502bb13d', APISecret='Yzg0MjM4YTgyMWQ4ZjU4NGVlYWU0YmM1',
-                       APIKey='9ed7eb33100a35fe4c6aa7845b3041f2',
+    wsParam = Ws_Param(XF_API_Key, XF_API_Secret, XF_APP_ID,
                        AudioFile='temp_audio_standard.wav')
     app.run(host='0.0.0.0', port=12346)

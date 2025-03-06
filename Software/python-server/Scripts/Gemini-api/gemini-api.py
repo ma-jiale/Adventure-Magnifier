@@ -1,7 +1,8 @@
 import google.generativeai as genai
+from config import API_KEY
 
 # 配置 API 密钥
-genai.configure(api_key="AIzaSyAFpwjnWz8SbWA-1yPdl-iDqAI7rQVUnjc")
+genai.configure(API_KEY)
 # 创建生成式模型的实例 genai_model
 genai_model = genai.GenerativeModel("gemini-1.5-pro")
 

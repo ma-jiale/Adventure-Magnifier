@@ -1,10 +1,6 @@
 from aip import AipSpeech
 import os
-
-APP_ID = '116958157'
-API_KEY = "vWqLVUQfe9BJtpN9go6YtxK4"
-SECRET_KEY = "XdkkgTqU967fcIsHnYKfw59xrSZbvVnm"
-
+from config import APP_ID, API_KEY, SECRET_KEY
 
 def baidu_tts(text):
     """根据传入的文字内容，调用百度文字转语音模型，将生成的语音写入本地文件"""
