@@ -171,3 +171,5 @@ cython_debug/
 .pypirc
 
 .idea/
+# 防止存放API KEY的代码被提交
+config.py
