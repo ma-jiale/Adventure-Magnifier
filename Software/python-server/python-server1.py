@@ -1,15 +1,18 @@
+from flask import Flask, request, Response
+from datetime import datetime
 from ultralytics import YOLO
 import google.generativeai as genai
 from aip import AipSpeech
 import uuid
 from PIL import Image
-import socket
 import struct
 import io
 import numpy as np
 import cv2
 from pydub import AudioSegment
 from openai import OpenAI
+
+app = Flask(__name__)
 
 # 加载YOLO模型
 model = YOLO("models/myModel.pt")
@@ -34,6 +37,32 @@ PORT = 12345        # 与 Unity 中设置的端口号相同
 # 存储检测历史
 detect_history = []
 
+##############################
+# 服务器部分
+# 从Unity前端获取图像数据
+@app.route('/upload', methods=['POST'])
+def handle_upload():
+    try:
+        # 获取图片数据
+        image_data = request.data
+
+        # 保存为 PNG 文件
+        with open('detection.png', 'wb') as f:
+            f.write(image_data)
+
+        print(f"{datetime.now().strftime('%H:%M:%S')} 收到并保存了PNG文件")
+
+        img = precess_image(image_data)
+        voice = detect_and_generate(img)
+        response = Response(voice, mimetype='audio/wav')
+        # 设置检测结果为响应头
+        response.headers['Detection-Result'] = detect_history[-1]
+        return response  
+
+    except Exception as e:
+        print(f"保存失败: {str(e)}")
+        return 'Error saving image', 10086
+
 
 def YOLO_detect(img):
     """调用YOLO模型检测传入的图片，返回检测结果"""
@@ -56,6 +85,7 @@ def YOLO_detect(img):
             if score > 0.7 and class_name not in detected_objects:
                 detected_objects.append(class_name)
     if detected_objects:
+        print(detected_objects)
         return detected_objects
     else:
         return None
@@ -98,54 +128,34 @@ def detect_and_generate(img):
             detect_history.append(detection)
             print("the history is"+ str(detect_history))
             text = "你是一个小学老师，使用少于100个字向上小学的小朋友科普" + str(detection) + "(请在回答时用中文代替),用：小朋友你好，这是" + str(detection) + "(请在回答时用中文代替)开头。"
-            respond = DeepSeek(text)
+            respond = gemini(text)
             voice = baidu_tts(respond)
     return voice
         # os.system("baidu_tts.mp3")
 
 
 
-def receive_image(conn):
+def precess_image(image_data):
     """接收来自客户端的图片数据并返回BGR格式图片数据"""
-    while True:
-        # 接收图片数据长度
-        length_bytes = conn.recv(4)
-        if not length_bytes:
-            print("客户端断开连接")
-            break
-        # 解包得到图片长度
-        image_length = struct.unpack('<i', length_bytes)[0]
+    if image_data:
+        try:
+            # 使用 PIL (Pillow) 库处理接收到的图片数据
+            image = Image.open(io.BytesIO(image_data))
+            print("成功接收到图片，大小:", image.size)
+            image_np = np.array(image)
+            # 如果图像是 RGB 格式，需要转换为 BGR 格式
+            image_bgr = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
 
-        # 接收实际的图片数据
-        image_data = b''
-        while len(image_data) < image_length:
-            remaining = image_length - len(image_data)
-            chunk = conn.recv(min(remaining, 4096))  # 每次接收一部分数据
-            if not chunk:
-                print("接收数据时发生错误")
-                break
-            image_data += chunk
+            # # 使用 OpenCV 显示图像
+            # cv2.imshow("test", image_bgr)
+            # cv2.waitKey(0)
+            # cv2.destroyAllWindows()
 
-        if image_data:
-            try:
-                # 使用 PIL (Pillow) 库处理接收到的图片数据
-                image = Image.open(io.BytesIO(image_data))
-                print("成功接收到图片，大小:", image.size)
-                image_np = np.array(image)
-                # 如果图像是 RGB 格式，需要转换为 BGR 格式
-                image_bgr = cv2.cvtColor(image_np, cv2.COLOR_RGB2BGR)
-
-                # # 使用 OpenCV 显示图像
-                # cv2.imshow("test", image_bgr)
-                # cv2.waitKey(0)
-                # cv2.destroyAllWindows()
-
-                return image_bgr
-            except Exception as e:
-                print("处理图片数据时出错:", e)
-        else:
-            print("未接收到图片数据")
-            break
+            return image_bgr
+        except Exception as e:
+            print("处理图片数据时出错:", e)
+    else:
+        print("未接收到图片数据")
 
 
 def send_sound(voice, conn):
@@ -195,25 +205,26 @@ def send_string_array(string_array, conn):
     except Exception as e:
         print(f"发送字符串数组时发生错误: {e}")
 
-def start_server():
-    """python服务器主循环"""
-    while True:
-        with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-            s.bind((HOST, PORT))
-            s.listen()
-            print(f"Python 服务器正在监听端口 {PORT}...")
-
-            conn, addr = s.accept()
-            with conn:
-                print(f"与客户端 {addr} 建立连接")
-                # 连接建立后，开始接收图片
-                img = receive_image(conn)
-                voice = detect_and_generate(img)
-                send_sound(voice, conn)
-                send_string_array(detect_history, conn)
-            s.close()
-            conn.close()
+# def start_server():
+#     """python服务器主循环"""
+#     while True:
+#         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+#             s.bind((HOST, PORT))
+#             s.listen()
+#             print(f"Python 服务器正在监听端口 {PORT}...")
+#
+#             conn, addr = s.accept()
+#             with conn:
+#                 print(f"与客户端 {addr} 建立连接")
+#                 # 连接建立后，开始接收图片
+#                 img = receive_image(conn)
+#                 voice = detect_and_generate(img)
+#                 send_sound(voice, conn)
+#                 send_string_array(detect_history, conn)
+#             s.close()
+#             conn.close()
 
 
 if __name__ == "__main__":
-    start_server()
+    app.run(host='0.0.0.0', port=12345)
+    # start_server()
