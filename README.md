@@ -6,7 +6,7 @@
 
 ### 1.项目文件结构
 
-
+TODO
 
 ### 2.项目背景
 
@@ -17,7 +17,7 @@
 ![目标人群](images/目标人群.PNG)
 
 - 人群特点：语言学习能⼒强、好奇心旺盛、喜欢视觉和互动式体验。 
-- 人群需求：通过游戏化、趣味化的学习方式，激发主动探索的兴趣。
+- 人群需求：向往游戏化、趣味化的学习方式，激发主动探索的兴趣。
 
 ### 3.功能描述
 
@@ -300,9 +300,11 @@ baidu_tts(text)
 
    TODO
 
-### 4.使用显示视频
+### 4.使用演示视频
 
 [基于NER和YOLOv11的儿童早教机器人应用Adventure-Magnifier显示Demo_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1V3dVYuEaU/?spm_id_from=333.1387.homepage.video_card.click&vd_source=bf08880c4c4d8fdcca4d17ed2ee821fe)
 
+### 5.鸣谢
 
+本软件前端UI界面素材来自：https://www.irasutoya.com/，十分感谢！
 
