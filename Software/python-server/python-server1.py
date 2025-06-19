@@ -1,7 +1,7 @@
 from flask import Flask, request, Response
 from datetime import datetime
 from ultralytics import YOLO
-import google.generativeai as genai
+from google import genai
 from aip import AipSpeech
 import uuid
 from PIL import Image
@@ -18,13 +18,11 @@ app = Flask(__name__)
 # 加载YOLO模型
 model = YOLO("models/myModel.pt")
 
-# 配置gemini API
-genai.configure(Gemini_API_KEY)
-genai_model = genai.GenerativeModel("gemini-1.5-pro")
+genai_client = genai.Client(api_key=Gemini_API_KEY)
+# genai_model = genai.GenerativeModel("gemini-2.5-flash")
 
 # 使用DeepSeeek的API密钥和 API 的基础 URL创建一个OpenAI客户端实例
-client = OpenAI(DeepSeek_API_KEY, base_url="https://api.deepseek.com")
-
+client = OpenAI(api_key=DeepSeek_API_KEY, base_url="https://api.deepseek.com")
 client_id = str(uuid.uuid4())
 # HOST = '127.0.0.1'  # 监听所有可用的接口
 HOST = '0.0.0.0'  # 监听所有可用的接口
@@ -89,7 +87,10 @@ def YOLO_detect(img):
 def gemini(text):
     """根据传入的文字内容，调用Gemini大语言模型，返回生成的回复文本"""
     print("DEBUG:正在接收大模型回答文字结果")
-    response = genai_model.generate_content(text)
+    response = genai_client.models.generate_content(
+    model="gemini-2.5-flash",
+    contents=text,
+    )
     return response.text
 
 def DeepSeek(text):

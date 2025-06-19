@@ -262,6 +262,6 @@ def send_request_to_model(sentence):
         return {"error": f"请求异常: {str(e)}"}
 
 if __name__ == '__main__':
-    wsParam = Ws_Param(XF_API_Key, XF_API_Secret, XF_APP_ID,
+    wsParam = Ws_Param(XF_APP_ID,XF_API_Key, XF_API_Secret,
                        AudioFile='temp_audio_standard.wav')
     app.run(host='0.0.0.0', port=12346)
